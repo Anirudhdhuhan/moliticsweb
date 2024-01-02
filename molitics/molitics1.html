@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Document</title>
+  <link rel="stylesheet" href="path-to-bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="the.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+
+    </script>
+</head>
+
+<nav class="navbar navbar-expand-sm bg-white">
+  <div class="container-fluid abc">
+    <a class="navbar-brand" href="#">
+      <img src="Molitics_icon.png" style="width:200px;" class="rounded-pill"></a>
+    <div class="container-fluid-sm align-content-sm-start me-auto">
+      <input class="form-control-plaintext rounded-pill bg-light search" type="text" placeholder="Search"
+        style="padding-left: 10px">
+    </div>
+    <button class="btn btn-primary" type="button">Sign In</button>
+  </div>
+</nav>
+
+<!-- <div class="container text-center"> -->
+
+<div class="row align-items-center">
+  <div class="nav">
+    <style>
+      /* .sidebar {
+          align: left;f
+          height: 966px;
+          width: fit-content;
+          position: absolute;
+          top: 1;
+          background-color: white;
+          padding-top: 20px;
+          } */
+
+
+      .search {
+
+        background-color: #adb5bd;
+        width: 250px;
+      }
+
+      .abc {
+        padding-left: 60px;
+        gap: 50px;
+      }
+
+      .sidebar {
+        align: left;
+        /* height: 966px; */
+        width: auto;
+        position: relative;
+        background-color: white;
+        /* padding-top: 20px; */
+        padding: 15px 35px 30px 40px;
+      }
+
+      .sidebar a {
+        padding: 15px;
+        text-align: left;
+        text-decoration: none;
+        font-size: 18px;
+        color: #333;
+        display: block;
+        position: relative;
+      }
+
+      .content {
+        margin-left: 260px;
+        padding: 20px;
+      }
+
+      .icon {
+        height: 25px;
+        width: 25px;
+        margin-top: 15px;
+      }
+
+      .profileimg {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+
+      }
+
+      .janed {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        background: white;
+        padding: 12px 16px 12px 16px;
+        border-radius: 5px;
+        font-size: medium;
+        justify-content: space-between;
+      }
+
+      .janed p {
+        padding-left: 60px;
+        margin-top: 15px;
+        align-items: right;
+      }
+
+      .janed strong {
+        margin-left: -40px;
+      }
+
+      .janed-rows .row {
+        padding-top: 15px;
+      }
+
+      .center {
+        text-align: center;
+        align-items: center;
+      }
+
+      .janed-rowh {
+        gap: 0px;
+      }
+
+      .right {
+        margin-right: 30px;
+      }
+
+      @media screen and (min-width:768px) and (max-width:1000px) {
+        .text-sm-start {
+          font-size: 10px;
+        }
+      }
+
+      .mar {
+        margin-left: 15px;
+      }
+
+      .down {
+        margin-bottom: 5px;
+        margin-right: 2px;
+      }
+
+      .but {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      p.solid {
+        border-style: solid;
+      }
+
+      input[type="radio"] {
+        width: 20px;
+        height: 20px;
+      }
+
+      .radio-label {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+
+      .radio-progress {
+        max-width: 290px;
+        margin: 0 auto;
+      }
+
+      .list-lk p {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .bottom-line {
+        border-bottom: 1px solid #D9D7D7;
+      }
+
+      .arrow-space {
+        display: flex;
+        justify-content: space-between;
+        align-items: unset;
+      }
+
+      .dot-lk {
+        display: flex;
+      }
+
+      .mobile-text {
+        margin-left: 23px;
+      }
+
+      a.link {
+        color: black;
+        text-decoration: none;
+      }
+
+      .single-line {
+        white-space: nowrap;
+        /* Prevents the text from wrapping */
+        overflow: hidden;
+        /* Hides the overflow text */
+        text-overflow: ellipsis;
+        /* Shows an ellipsis (...) if the text overflows the container */
+      }
+
+      .surveyUserImages {
+        display: flex;
+        /* Use flexbox for horizontal alignment */
+        align-items: center;
+        /* Align items vertically in the center */
+      }
+
+      .surveyUserImage {
+        margin-right: 0.5rem;
+        /* Adjust spacing between images as needed */
+      }
+
+      .surveyUserImage img {
+        width: 2rem;
+        /* Adjust the size as needed */
+        height: 2rem;
+        /* Adjust the size as needed */
+        border-radius: 50%;
+        /* Makes the image circular */
+      }
+    </style>
+    </head>
+
+    <body style="background-color: rgb(236, 234, 234); ">
+      // #f8f9fa
+      <div class="row">
+        <div class="col-lg-3 container">
+          <div class="sidebar container-fluid">
+            <div class="d-flex justify-content-left">
+              <img src="home.png" class="icon"> <a href="#" class="text-center">Home</a>
+            </div>
+            <div class="d-flex justify-content-left">
+              <img src="four-squares-logo.jpg" class="icon"> <a href="#">Trending
+                Feeds</a>
+            </div>
+            <div class="d-flex justify-content-left">
+              <img src="book.png" class="icon"> <a href="#">Articles</a>
+            </div>
+            <div class="d-flex justify-content-left">
+              <img src="leader.png" class="icon"> <a href="#">Leaders</a>
+            </div>
+            <div class="d-flex justify-content-left">
+              <img src="survey.png" class="icon"> <a href="#">Survey</a>
+            </div>
+            <div class="d-flex justify-content-left">
+              <img src="voting.png" class="icon"> <a href="#">Election Results</a>
+            </div>
+            <div class="d-flex justify-content-left">
+              <img src="caricatures.png" class="icon"> <a href="#">Caricatures</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <br>
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              <div class="d-flex" style="align-items: start;">
+
+                <img src="BJP-logoo.png" style="width:70px; height: 40px;" class="rounded-pill">
+                <div class="d-flex flex-column align-items-start ">
+                  <strong>BJP</strong>
+
+                  <p class="single-line" style="font-size: 12px; color: #787e85;">3 hours ago</p>
+
+                </div>
+                <i class="bi bi-patch-check-fill">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-patch-check-fill" viewBox="0 0 16 16" style="color: navy;">
+                    <path
+                      d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                  </svg>
+                </i>
+                <i class=" three-dots-vertical" style="margin-left: 78%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path
+                      d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                  </svg>
+                </i>
+              </div>
+              <br>
+              <p class="text-sm-start">Some quick example text to build on the card title and make up the bulk of
+                the card's content.</p>
+            </div>
+            <div class="container">
+              <img src="bjpandolan.jpg" class="card-img-top" alt="...">
+            </div>
+            <br>
+            <p style="text-align: start" class="mar">3 Upvote 3 downvote 3 comment 3 repost</p>
+
+            <div class="d-flex">
+              <span data-v-c5afaa48=""
+                style="background: green; height: 5px; width: 50%; display: inline-block;"></span>
+              <span data-v-c5afaa48="" style="background: red; height: 5px; width: 50%; display: inline-block;"></span>
+            </div>
+
+            <div class="card-body flex">
+
+              <svg width="20" class="right" height="20" viewBox="0 0 16 16" fill="currentColor"
+                style="display: inline-block; vertical-align: text-bottom;">
+                <path
+                  d="M8.834.066c.763.087 1.5.295 2.01.884.505.581.656 1.378.656 2.3 0 .467-.087 1.119-.157 1.637L11.328 5h1.422c.603 0 1.174.085 1.668.333.508.254.911.679 1.137 1.2.453.998.438 2.447.188 4.316l-.04.306c-.105.79-.195 1.473-.313 2.033-.131.63-.315 1.209-.668 1.672C13.97 15.847 12.706 16 11 16c-1.848 0-3.234-.333-4.388-.653-.165-.045-.323-.09-.475-.133-.658-.186-1.2-.34-1.725-.415A1.75 1.75 0 0 1 2.75 16h-1A1.75 1.75 0 0 1 0 14.25v-7.5C0 5.784.784 5 1.75 5h1a1.75 1.75 0 0 1 1.514.872c.258-.105.59-.268.918-.508C5.853 4.874 6.5 4.079 6.5 2.75v-.5c0-1.202.994-2.337 2.334-2.184ZM4.5 13.3c.705.088 1.39.284 2.072.478l.441.125c1.096.305 2.334.598 3.987.598 1.794 0 2.28-.223 2.528-.549.147-.193.276-.505.394-1.07.105-.502.188-1.124.295-1.93l.04-.3c.25-1.882.189-2.933-.068-3.497a.921.921 0 0 0-.442-.48c-.208-.104-.52-.174-.997-.174H11c-.686 0-1.295-.577-1.206-1.336.023-.192.05-.39.076-.586.065-.488.13-.97.13-1.328 0-.809-.144-1.15-.288-1.316-.137-.158-.402-.304-1.048-.378C8.357 1.521 8 1.793 8 2.25v.5c0 1.922-.978 3.128-1.933 3.825a5.831 5.831 0 0 1-1.567.81ZM2.75 6.5h-1a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                </path>
+              </svg>
+              <svg width="20" class="right" height="19" viewBox="0 0 16 16" fill="currentColor"
+                style="display: inline-block; vertical-align: text-bottom;">
+                <path
+                  d="M7.083 15.986c-.763-.087-1.499-.295-2.011-.884-.504-.581-.655-1.378-.655-2.299 0-.468.087-1.12.157-1.638l.015-.112H3.167c-.603 0-1.174-.086-1.669-.334a2.415 2.415 0 0 1-1.136-1.2c-.454-.998-.438-2.447-.188-4.316l.04-.306C.32 4.108.41 3.424.526 2.864c.132-.63.316-1.209.669-1.672C1.947.205 3.211.053 4.917.053c1.848 0 3.234.332 4.388.652l.474.133c.658.187 1.201.341 1.726.415a1.75 1.75 0 0 1 1.662-1.2h1c.966 0 1.75.784 1.75 1.75v7.5a1.75 1.75 0 0 1-1.75 1.75h-1a1.75 1.75 0 0 1-1.514-.872c-.259.105-.59.268-.919.508-.671.491-1.317 1.285-1.317 2.614v.5c0 1.201-.994 2.336-2.334 2.183Zm4.334-13.232c-.706-.089-1.39-.284-2.072-.479l-.441-.125c-1.096-.304-2.335-.597-3.987-.597-1.794 0-2.28.222-2.529.548-.147.193-.275.505-.393 1.07-.105.502-.188 1.124-.295 1.93l-.04.3c-.25 1.882-.19 2.933.067 3.497a.923.923 0 0 0 .443.48c.208.104.52.175.997.175h1.75c.685 0 1.295.577 1.205 1.335-.022.192-.049.39-.075.586-.066.488-.13.97-.13 1.329 0 .808.144 1.15.288 1.316.137.157.401.303 1.048.377.307.035.664-.237.664-.693v-.5c0-1.922.978-3.127 1.932-3.825a5.878 5.878 0 0 1 1.568-.809Zm1.75 6.798h1a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25Z">
+                </path>
+              </svg>
+              <svg width="22" class="right" height="22" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path data-v-0a9e0a4c=""
+                  d="M1.5 15V7.5C1.5 6.50544 1.89508 5.5516 2.59834 4.84834C3.3016 4.14508 4.25544 3.75 5.25 3.75H19.5L18.3 2.85C18.2211 2.79091 18.1548 2.71687 18.1047 2.63212C18.0545 2.54737 18.0215 2.45356 18.0075 2.35606C17.9937 2.25856 17.9991 2.15926 18.0236 2.06386C18.0478 1.96845 18.0909 1.87879 18.15 1.8C18.2091 1.7212 18.2831 1.65483 18.368 1.60464C18.4527 1.55446 18.5463 1.52146 18.644 1.50754C18.7413 1.49361 18.8407 1.49902 18.9361 1.52346C19.0315 1.54791 19.1211 1.59091 19.2 1.65L22.2 3.9C22.2931 3.96987 22.3687 4.06045 22.4208 4.16458C22.4728 4.26873 22.5 4.38357 22.5 4.5C22.5 4.61643 22.4728 4.73127 22.4208 4.83541C22.3687 4.93954 22.2931 5.03014 22.2 5.1L19.2 7.35C19.0701 7.44738 18.9123 7.5 18.75 7.5C18.6336 7.5 18.5187 7.47289 18.4146 7.42083C18.3105 7.36875 18.2199 7.29315 18.15 7.2C18.0308 7.04088 17.9793 6.84085 18.0075 6.64393C18.0357 6.44703 18.1409 6.26935 18.3 6.15L19.5 5.25H5.25C4.65327 5.25 4.08098 5.48704 3.65901 5.90901C3.23705 6.33097 3 6.90327 3 7.5V15C3 15.1989 2.92098 15.3897 2.78032 15.5302C2.63967 15.6711 2.44892 15.75 2.25 15.75C2.05108 15.75 1.86033 15.6711 1.71968 15.5302C1.57902 15.3897 1.5 15.1989 1.5 15ZM21.75 8.25C21.5511 8.25 21.3603 8.32902 21.2197 8.46967C21.0789 8.61033 21 8.8011 21 9V16.5C21 17.0967 20.7628 17.6691 20.3409 18.0909C19.9191 18.5129 19.3467 18.75 18.75 18.75H4.5L5.7 17.85C5.85914 17.7307 5.96433 17.553 5.99247 17.356C6.0206 17.1591 5.96936 16.9591 5.85 16.8C5.73065 16.6408 5.55297 16.5357 5.35606 16.5075C5.15914 16.4793 4.95914 16.5308 4.8 16.65L1.8 18.9C1.70685 18.9699 1.63125 19.0605 1.57917 19.1646C1.52711 19.2687 1.5 19.3836 1.5 19.5C1.5 19.6164 1.52711 19.7313 1.57917 19.8354C1.63125 19.9395 1.70685 20.0301 1.8 20.1L4.8 22.35C4.92981 22.4475 5.08773 22.5 5.25 22.5C5.36643 22.5 5.48127 22.4728 5.58541 22.4208C5.68954 22.3687 5.78013 22.2931 5.85 22.2C5.96936 22.0409 6.0206 21.8409 5.99247 21.644C5.96433 21.447 5.85914 21.2692 5.7 21.15L4.5 20.25H18.75C19.7445 20.25 20.6985 19.8549 21.4017 19.1517C22.1049 18.4485 22.5 17.4945 22.5 16.5V9C22.5 8.8011 22.4211 8.61033 22.2803 8.46967C22.1397 8.32902 21.9489 8.25 21.75 8.25Z"
+                  style="fill: rgb(0, 0, 0);"></path>
+              </svg>
+              <svg width="22" class="right" height="22" viewBox="0 0 24 24" fill="currentColor"
+                style="display: inline-block; vertical-align: text-bottom;">
+                <path d="M2.5 2.75a.75.75 0 0 0-1.5 0v18.5c0 .414.336.75.75.75H20a.75.75 0 0 0 0-1.5H2.5V2.75Z"></path>
+                <path
+                  d="M22.28 7.78a.75.75 0 0 0-1.06-1.06l-5.72 5.72-3.72-3.72a.75.75 0 0 0-1.06 0l-6 6a.75.75 0 1 0 1.06 1.06l5.47-5.47 3.72 3.72a.75.75 0 0 0 1.06 0l6.25-6.25Z">
+                </path>
+              </svg>
+            </div>
+
+          </div>
+          <br>
+          <div class="card-body">
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img src="Official_Photograph_of_Prime_Minister_Narendra_Modi_Portrait.png"
+                    style="width: 50px; height: 50px;" class="rounded-pill">
+                  <div class="d-flex flex-column align-items-start single-line"
+                    style="margin-left: 10px; margin-right: 8px;">
+                    <strong>Narendra Modi</strong>
+
+                    <p style="font-size: 10px; color: #787e85;">3 hours ago
+                      <span class="dot-lk ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-dot" viewBox="0 0 16 16">
+                          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                        </svg>
+                        Journalist</span>
+                    </p>
+                  </div>
+                  <i class="bi bi-patch-check-fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-patch-check-fill" viewBox="0 0 16 16" style="color: navy;">
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                    </svg>
+                  </i>
+                  <i class="bi bi-three-dots" style="margin: left 70%;"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" style="margin-left: 70%;" viewBox="0 0 16 16">
+                      <path
+                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                    </svg></i>
+                </div>
+                <br>
+                <p class="card-text text-sm-start">Some quick example text to build on the card title and make up
+                  the bulk of the card's content.</p>
+                <img src="#" alt="">
+              </div>
+            </div>
+          </div>
+          <br>
+          <h5 class="text-sm-start mobile-text">People you may know</h5>
+          <br>
+          <div class="row janed-rowh">
+            <div class="col">
+              <div class="align-content-sm-start janed">
+                <img src="Ellipse 4.png" class="profileimg"> <strong>Jane Cooper</strong></a>
+                <p><a class="btn btn-outline-secondary rounded-pill border-2" style="padding: 10px 20px 10px 20px;"
+                    href="#">Track</a></p>
+              </div>
+            </div><!-- /.col-lg-4 -->
+            <div class="col">
+              <div class="align-content-sm-start janed"> <img src="Ellipse 4.png" class="profileimg"><strong>Jane
+                  Cooper</strong></a>
+                <p><a class="btn btn-outline-secondary rounded-pill border-2" style="padding: 10px 20px 10px 20px;"
+                    href="#">Track</a></p>
+              </div>
+            </div><!-- /.col-lg-4 -->
+          </div>
+          <div class="janed-rows">
+            <div class="row janed-rowh">
+              <div class="col">
+                <div class="align-content-sm-start janed"> <img src="Ellipse 4.png" class="profileimg"><strong>Jane
+                    Cooper</strong></a>
+                  <p><a class="btn btn-outline-secondary rounded-pill border-2" style="padding: 10px 20px 10px 20px;"
+                      href="#">Track</a></p>
+                </div>
+              </div><!-- /.col-lg-4 -->
+              <div class="col">
+                <div class="align-content-sm-start janed">
+                  <img src="Ellipse 4.png" class="profileimg"><strong>Jane Cooper</strong></a>
+                  <p><a class="btn btn-outline-secondary rounded-pill border-2" style="padding: 10px 20px 10px 20px;"
+                      href="#">Track</a></p>
+                </div>
+              </div><!-- /.col-lg-4 -->
+            </div>
+          </div>
+          <br>
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              <div class="d-flex">
+                <img src="BJP-logoo.png" style="width:70px; height: 40px;" class="rounded-pill">
+                <div class="d-flex flex-column align-items-start ">
+                  <strong>BJP</strong>
+                  <p class="single-line" style="font-size: 12px;">3 hours ago</p>
+                </div>
+                <i class="bi bi-patch-check-fill">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-patch-check-fill" viewBox="0 0 16 16" style="color: navy;">
+                    <path
+                      d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                  </svg>
+                </i>
+                <i class=" three-dots-vertical" style="margin-left: 78%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path
+                      d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                  </svg>
+                </i>
+              </div>
+              <br>
+              <p class="text-sm-start">Some quick example text to build on the card title and make up the bulk of
+                the card's content.</p>
+            </div>
+            <div class="container">
+              <img src="bjpandolan.jpg" class="card-img-top" alt="...">
+            </div>
+            <br>
+            <p style="text-align: start" class="mar">3 Upvote 3 downvote 3 comment 3 report</p>
+
+
+            <div class="d-flex">
+              <span data-v-c5afaa48=""
+                style="background: green; height: 5px; width: 50%; display: inline-block;"></span>
+              <span data-v-c5afaa48="" style="background: red; height: 5px; width: 50%; display: inline-block;"></span>
+            </div>
+
+            <div class="card-body flex">
+
+              <svg width="20" class="right" height="20" viewBox="0 0 16 16" fill="currentColor"
+                style="display: inline-block; vertical-align: text-bottom;">
+                <path
+                  d="M8.834.066c.763.087 1.5.295 2.01.884.505.581.656 1.378.656 2.3 0 .467-.087 1.119-.157 1.637L11.328 5h1.422c.603 0 1.174.085 1.668.333.508.254.911.679 1.137 1.2.453.998.438 2.447.188 4.316l-.04.306c-.105.79-.195 1.473-.313 2.033-.131.63-.315 1.209-.668 1.672C13.97 15.847 12.706 16 11 16c-1.848 0-3.234-.333-4.388-.653-.165-.045-.323-.09-.475-.133-.658-.186-1.2-.34-1.725-.415A1.75 1.75 0 0 1 2.75 16h-1A1.75 1.75 0 0 1 0 14.25v-7.5C0 5.784.784 5 1.75 5h1a1.75 1.75 0 0 1 1.514.872c.258-.105.59-.268.918-.508C5.853 4.874 6.5 4.079 6.5 2.75v-.5c0-1.202.994-2.337 2.334-2.184ZM4.5 13.3c.705.088 1.39.284 2.072.478l.441.125c1.096.305 2.334.598 3.987.598 1.794 0 2.28-.223 2.528-.549.147-.193.276-.505.394-1.07.105-.502.188-1.124.295-1.93l.04-.3c.25-1.882.189-2.933-.068-3.497a.921.921 0 0 0-.442-.48c-.208-.104-.52-.174-.997-.174H11c-.686 0-1.295-.577-1.206-1.336.023-.192.05-.39.076-.586.065-.488.13-.97.13-1.328 0-.809-.144-1.15-.288-1.316-.137-.158-.402-.304-1.048-.378C8.357 1.521 8 1.793 8 2.25v.5c0 1.922-.978 3.128-1.933 3.825a5.831 5.831 0 0 1-1.567.81ZM2.75 6.5h-1a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                </path>
+              </svg>
+              <svg width="20" class="right" height="19" viewBox="0 0 16 16" fill="currentColor"
+                style="display: inline-block; vertical-align: text-bottom;">
+                <path
+                  d="M7.083 15.986c-.763-.087-1.499-.295-2.011-.884-.504-.581-.655-1.378-.655-2.299 0-.468.087-1.12.157-1.638l.015-.112H3.167c-.603 0-1.174-.086-1.669-.334a2.415 2.415 0 0 1-1.136-1.2c-.454-.998-.438-2.447-.188-4.316l.04-.306C.32 4.108.41 3.424.526 2.864c.132-.63.316-1.209.669-1.672C1.947.205 3.211.053 4.917.053c1.848 0 3.234.332 4.388.652l.474.133c.658.187 1.201.341 1.726.415a1.75 1.75 0 0 1 1.662-1.2h1c.966 0 1.75.784 1.75 1.75v7.5a1.75 1.75 0 0 1-1.75 1.75h-1a1.75 1.75 0 0 1-1.514-.872c-.259.105-.59.268-.919.508-.671.491-1.317 1.285-1.317 2.614v.5c0 1.201-.994 2.336-2.334 2.183Zm4.334-13.232c-.706-.089-1.39-.284-2.072-.479l-.441-.125c-1.096-.304-2.335-.597-3.987-.597-1.794 0-2.28.222-2.529.548-.147.193-.275.505-.393 1.07-.105.502-.188 1.124-.295 1.93l-.04.3c-.25 1.882-.19 2.933.067 3.497a.923.923 0 0 0 .443.48c.208.104.52.175.997.175h1.75c.685 0 1.295.577 1.205 1.335-.022.192-.049.39-.075.586-.066.488-.13.97-.13 1.329 0 .808.144 1.15.288 1.316.137.157.401.303 1.048.377.307.035.664-.237.664-.693v-.5c0-1.922.978-3.127 1.932-3.825a5.878 5.878 0 0 1 1.568-.809Zm1.75 6.798h1a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25Z">
+                </path>
+              </svg>
+              <svg width="22" class="right" height="22" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path data-v-0a9e0a4c=""
+                  d="M1.5 15V7.5C1.5 6.50544 1.89508 5.5516 2.59834 4.84834C3.3016 4.14508 4.25544 3.75 5.25 3.75H19.5L18.3 2.85C18.2211 2.79091 18.1548 2.71687 18.1047 2.63212C18.0545 2.54737 18.0215 2.45356 18.0075 2.35606C17.9937 2.25856 17.9991 2.15926 18.0236 2.06386C18.0478 1.96845 18.0909 1.87879 18.15 1.8C18.2091 1.7212 18.2831 1.65483 18.368 1.60464C18.4527 1.55446 18.5463 1.52146 18.644 1.50754C18.7413 1.49361 18.8407 1.49902 18.9361 1.52346C19.0315 1.54791 19.1211 1.59091 19.2 1.65L22.2 3.9C22.2931 3.96987 22.3687 4.06045 22.4208 4.16458C22.4728 4.26873 22.5 4.38357 22.5 4.5C22.5 4.61643 22.4728 4.73127 22.4208 4.83541C22.3687 4.93954 22.2931 5.03014 22.2 5.1L19.2 7.35C19.0701 7.44738 18.9123 7.5 18.75 7.5C18.6336 7.5 18.5187 7.47289 18.4146 7.42083C18.3105 7.36875 18.2199 7.29315 18.15 7.2C18.0308 7.04088 17.9793 6.84085 18.0075 6.64393C18.0357 6.44703 18.1409 6.26935 18.3 6.15L19.5 5.25H5.25C4.65327 5.25 4.08098 5.48704 3.65901 5.90901C3.23705 6.33097 3 6.90327 3 7.5V15C3 15.1989 2.92098 15.3897 2.78032 15.5302C2.63967 15.6711 2.44892 15.75 2.25 15.75C2.05108 15.75 1.86033 15.6711 1.71968 15.5302C1.57902 15.3897 1.5 15.1989 1.5 15ZM21.75 8.25C21.5511 8.25 21.3603 8.32902 21.2197 8.46967C21.0789 8.61033 21 8.8011 21 9V16.5C21 17.0967 20.7628 17.6691 20.3409 18.0909C19.9191 18.5129 19.3467 18.75 18.75 18.75H4.5L5.7 17.85C5.85914 17.7307 5.96433 17.553 5.99247 17.356C6.0206 17.1591 5.96936 16.9591 5.85 16.8C5.73065 16.6408 5.55297 16.5357 5.35606 16.5075C5.15914 16.4793 4.95914 16.5308 4.8 16.65L1.8 18.9C1.70685 18.9699 1.63125 19.0605 1.57917 19.1646C1.52711 19.2687 1.5 19.3836 1.5 19.5C1.5 19.6164 1.52711 19.7313 1.57917 19.8354C1.63125 19.9395 1.70685 20.0301 1.8 20.1L4.8 22.35C4.92981 22.4475 5.08773 22.5 5.25 22.5C5.36643 22.5 5.48127 22.4728 5.58541 22.4208C5.68954 22.3687 5.78013 22.2931 5.85 22.2C5.96936 22.0409 6.0206 21.8409 5.99247 21.644C5.96433 21.447 5.85914 21.2692 5.7 21.15L4.5 20.25H18.75C19.7445 20.25 20.6985 19.8549 21.4017 19.1517C22.1049 18.4485 22.5 17.4945 22.5 16.5V9C22.5 8.8011 22.4211 8.61033 22.2803 8.46967C22.1397 8.32902 21.9489 8.25 21.75 8.25Z"
+                  style="fill: rgb(0, 0, 0);"></path>
+              </svg>
+              <svg width="22" class="right" height="22" viewBox="0 0 24 24" fill="currentColor"
+                style="display: inline-block; vertical-align: text-bottom;">
+                <path d="M2.5 2.75a.75.75 0 0 0-1.5 0v18.5c0 .414.336.75.75.75H20a.75.75 0 0 0 0-1.5H2.5V2.75Z"></path>
+                <path
+                  d="M22.28 7.78a.75.75 0 0 0-1.06-1.06l-5.72 5.72-3.72-3.72a.75.75 0 0 0-1.06 0l-6 6a.75.75 0 1 0 1.06 1.06l5.47-5.47 3.72 3.72a.75.75 0 0 0 1.06 0l6.25-6.25Z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <br>
+          <h5 class="text-sm-start mobile-text">Trending Leaders</h5>
+          <br>
+          <div class="row janed-rowh">
+            <div class="col">
+              <div class="janed">
+                <img src="Ellipse 4.png" class="profileimg"> Narendra Modi</a>
+                <p><a class="btn" href="#" style="align-items: end;"> »</a></p>
+              </div>
+            </div><!-- /.col-lg-4 -->
+            <div class="col ">
+              <div class="janed"> <img src="Ellipse 4.png" class="profileimg">Amit shah</a>
+                <p><a class="btn" href="#" style="align-items: end;"> »</a></p>
+              </div>
+            </div><!-- /.col-lg-4 -->
+          </div>
+          <div class="janed-rows">
+            <div class="row janed-rowh">
+              <div class="col">
+                <div class="janed"> <img src="Ellipse 4.png" class="profileimg">Rahul Gandhi</a>
+                  <p><a class="btn" href="#" style="align-items: end;"> »</a></p>
+                </div>
+              </div><!-- /.col-lg-4 -->
+              <div class="col ">
+                <div class="janed">
+                  <img src="Ellipse 4.png" class="profileimg">Yogi Adityanath</a>
+                  <p><a class="btn" href="#" style="align-items: end;"> »</a></p>
+                </div>
+              </div><!-- /.col-lg-4 -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 ">
+          <br>
+          <div class="card" style="width: 100%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-sm-start list-lk">
+                <p> <strong>Survey</strong><a href="">See all</a>
+              </li>
+              </p>
+              <p class="text-sm-start m-2" style="padding-bottom: 10px">Who will form the next government in India ?</p>
+
+              <div class="flex mt-2">
+                <div class="surveyUserImages flex">
+                  <div class="surveyUserImage"><img
+                      src="https://ar-cdn-a.molitics.in/90x90/images/user-profile-pic/News18Bihar.jpg" alt=""
+                      class="rounded-full border"></div>
+                  <div class="surveyUserImage"><img
+                      src="https://ar-cdn-a.molitics.in/90x90/images/user-profile-pic/35109_1684838210.jpg" alt=""
+                      class="rounded-full border"></div>
+                  <div class="surveyUserImage"><img
+                      src="https://ar-cdn-a.molitics.in/90x90/images/user-profile-pic/11872_1527604776.jpg" alt=""
+                      class="rounded-full border"></div>
+                  <p class="text-sm" style="margin-top: 15px; size: 1px;">1 + response</p>
+                  <p class="text-sm" style="margin-top: 15px; size: 1px;">2023-11-21 09:08:49</p>
+                </div>
+
+                <div class="ml-auto my-auto">
+
+                </div>
+              </div>
+
+
+              <div class="container-fluid bottom-line">
+
+                <p class="text-sm-start m-2 align-content-center radio-label"> <input type="radio"
+                    class="radio-style h-5 w-5"> upa</p>
+                <div class="progress radio-progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-success" style="width: 25%">25%</div>
+                </div>
+
+                <p class="text-sm-start m-2 radio-label"><input type="radio" class="radio-style h-5 w-5"> nda</p>
+
+                <div class="progress radio-progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                  aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+                </div>
+                <p class="text-sm-start m-2 radio-label"><input type="radio" class="radio-style h-5 w-5"> third front
+                </p>
+
+                <div class="progress radio-progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                </div>
+
+                <br>
+              </div>
+              <li class="list-group-item arrow-space">
+
+
+                <p>Date/Time: <span id="datetime"></span></p>
+                <script>
+                  var dt = new Date();
+                  document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                </script>
+
+
+                <div>
+                  <a href=""><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="solid">
+                      <path
+                        d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z">
+                      </path>
+                    </svg></a>
+                  <a href=""><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="solid">
+                      <path
+                        d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z">
+                      </path>
+                    </svg></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div class="card" style="width: 100%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-sm-start"><strong>Trending Tags</strong></li>
+              <li class="list-group-item text-sm-start">
+                <button type="button" class="btn btn-outline-secondary down">#Bjp</button>
+
+                <button type="button" class="btn btn-outline-secondary down">#Congress</button>
+
+                <button type="button" class="btn btn-outline-secondary down">#Modi</button>
+
+                <button type="button" class="btn btn-outline-secondary down">#AmitShah</button>
+
+                <button type="button" class="btn btn-outline-secondary down">#RahulGandhi</button>
+
+                <button type="button" class="btn btn-outline-secondary down">#NDA</button>
+
+                <button type="button" class="btn btn-outline-secondary down">#upa</button>
+
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div class="card" style="width: 100%;">
+            <div class="container" style="padding-top: 20px; height: 150px; width:150px; ">
+              <img src="mayor.0d61db2.png" class="card-img-top" alt="...">
+            </div>
+
+            <li class="list-group-item center">Are you a Political Leader ?</li>
+            <br>
+            <p>
+            <div class="d-grid gap-2 col-4 mx-auto"><a class="btn btn-primary" href="#"
+                onclick="callingFunction()">Register </a></div>
+            </p>
+          </div>
+          <br>
+          <div class="card">
+            <div class="container">
+              <img src="toonbook.png" class="card-img-top" style="padding-top:10px;" alt="...">
+            </div>
+            <script>
+              const callingFunction = () => {
+                alert('Are you sure want to register ?')
+              }
+            </script>
+
+            <li class="list-group-item center ">Molitics Toonbook</li>
+            <br>
+            <p>
+            <div class="d-grid gap-2 col-4 mx-auto"><a class="btn btn-primary center" href="#"
+                onclick="alert('I am Molitics Toonbook, Ready to go!')">Edition 1</a></div>
+            </p>
+          </div>
+          <br>
+          <div class="card " style="width: 100%;">
+            <li class="list-group-item text-sm-start m-2">Follow us on</li>
+            <img src="#" alt="">
+            <div class="flex m-2">
+              <a href="" style="color:#1877F2;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                  fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg></a>
+              <a href="" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                  class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg></i></a>
+              <a href="" style="color:#006699"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                  fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+                </svg></a>
+              <a href="" class="link"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                  class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                </svg></a>
+              <a href="" style="color: red;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                  fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z" />
+                </svg>
+              </a>
+            </div>
+            </ul>
+          </div>
+          <br>
+          <div class="card " style="width: 100%;">
+            <li class="list-group-item text-sm-start m-2">Download App</li>
+            <div class="flex m-2">
+              <a href="#"><img src="playstore.png" width="100px" height="30px" alt="#"></a>
+              <a href="#"><img src="app-store.jpeg" width="100px" height="30px" alt="#"></a>
+            </div>
+          </div>
+          <br>
+              
+          <a href="contact.html" class="link" style="margin-right: 7px;">Contact Us</a>
+          <a href="privacy.html" class="link" style="margin-right: 7px;">Privacy Policy</a>
+          <a href="terms.html" class="link" style="margin-right: 7px;">Terms and Conditions</a>
+            
+        </div>
+      </div>
+    </body>
+    
+</html>

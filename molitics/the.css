@@ -1,0 +1,24 @@
+#jane1{
+    margin-left: -38px;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+navbar-brand {
+    margin: 150px;
+}
+
+.list-group-item{
+  align-items: center;
+}
+
+@media only screen and (max-width: 575px){
+
+}
+@media screen and (min-width:768px) and (max-width:1000px){
+
+}
+
+
+  
